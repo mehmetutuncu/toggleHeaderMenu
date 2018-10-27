@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WTF</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.open_menu').click(function(){
+               $(this).next('ul').toggle();
+               var className = document.getElementById("icon").className;
+               if(className == "fas fa-toggle-on"){
+                   document.getElementById("icon").className = "fas fa-toggle-off";
+               }
+               else{
+                   document.getElementById("icon").className = "fas fa-toggle-on";
+               }
+
+
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+
+<div class="header" id="myTopnav">
+
+
+    <div style="float:left"><img width="80px" src="img/logo.png" /></div>
+        <div class="header_right">
+
+            <div class="open_menu"><i id="icon" class="fas fa-toggle-on"></i></div>
+                <ul >
+
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+
+                </ul>
+        </div>
+
+</div>
+<div class="content">
+    <div class="title">
+        <h2>
+            Title
+        </h2>
+    </div>
+    <div class="item">
+        <p>Content Text</p>
+    </div>
+    <div class="item">
+        <p>Content Text-2</p>
+    </div>
+    <div class="item">
+        <p>Content Text-3</p>
+    </div>
+    <div class="item">
+        <p>Content Text-3</p>
+    </div>
+    <div class="item">
+        <p>Content Text-3</p>
+    </div>
+</div>
+<div class="footer">
+    <div><h1>Footer</h1></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
